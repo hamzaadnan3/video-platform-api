@@ -37,4 +37,4 @@ import fs from "fs"
 }
 
 
-export default cloudinaryUploadHandler;
+export {cloudinaryUploadHandler};
