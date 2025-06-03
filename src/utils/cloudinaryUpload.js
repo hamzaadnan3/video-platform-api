@@ -25,8 +25,9 @@ import fs from "fs"
        .catch((error) => {
            console.log(error);
        });
-    console.log("file upload successfull", uploadResult.url)
-  return uploadResult;
+        fs.unlinkSync(localFilePath)
+
+       return uploadResult;
 
     } catch (error) {
         fs.unlinkSync(localFilePath)
